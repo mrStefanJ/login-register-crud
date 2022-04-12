@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="login-card">
+    <div class="text-center">
+      <h1>Login</h1>
+    </div>
+    <div *ngIf="isLoading" class="loading-spinner">
+      <app-loading-spinner></app-loading-spinner>
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="login()" class="form-group" *ngIf="!isLoading">
+      <mat-form-field appearance="outline">
+        <mat-label>Email address</mat-label>
+        <input formControlName="email" matInput>
+      </mat-form-field>
+      <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+        <div *ngIf="f['email'].errors['required']">Email is required</div>
+      </div>
+      <mat-form-field appearance="outline">
+        <mat-label>Enter Password</mat-label>
+        <input formControlName="password" matInput [type]="hidePassword ? 'password' : 'text'" autocomplete="on">
+        <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hidePassword">
+          <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>    
+      </mat-form-field>
+      <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+        <div *ngIf="f['password'].errors['required']">Password is required</div>
+      </div>
+      <div class="btn-center">
+      <button mat-raised-button color="primary" class="btn">Login</button>
+    </div>
+      <a routerLink="/singup" class="link-secondary">New User? Click to Signup!</a>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    justify-content: center;
+
+    
+    .login-card{
+        margin-top: 15px;
+        padding: 20px;
+        width: 350px;
+        height: 300px;
+        border-radius: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+
+        .text-center{
+            text-align: center;
+        }
+
+        .loading-spinner{
+            text-align: center;
+        }
+
+        .form-group{
+            display: flex;
+            flex-direction: column;
+
+            .btn-center{
+                margin-bottom: 10px;
+                text-align: center;
+                .btn{
+                    width: 100px;
+                }
+            }
+
+            .link-secondary{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color: blue;
+                }
+            }
+        }
+
+        .invalid-feedback{
+            color: red;;
+        }
+    }
+}
