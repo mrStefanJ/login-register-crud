@@ -1,0 +1,13 @@
+.dialog{
+    height: auto;
+    .form-user{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        .role-radio-button{
+            margin-right: 10px;
+        }
+    }
+
+}

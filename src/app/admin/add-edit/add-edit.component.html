@@ -1,0 +1,33 @@
+<div class="dialog">
+    <h1 mat-dialog-title>{{ titleForm }}</h1>
+    <div mat-dialog-content>
+      <form [formGroup]="userForm" class="form-user">
+        <mat-form-field appearance="outline">
+          <mat-label>Enter first name</mat-label>
+          <input formControlName="firstName" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Enter last name</mat-label>
+          <input formControlName="lastName" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Enter email</mat-label>
+          <input formControlName="email" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Enter password</mat-label>
+          <input formControlName="password" matInput>
+        </mat-form-field>
+        <label id="radio-group-label">Pick user role:</label>
+        <mat-radio-group formControlName="role" class="role-radio-group">
+          <mat-radio-button class="role-radio-button" *ngFor="let role of mainRole" [value]="role">
+            {{role}}
+          </mat-radio-button>
+        </mat-radio-group>
+      </form>
+    </div>
+    <div mat-dialog-actions [align]="'end'">
+      <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+      <button mat-raised-button color="primary" mat-dialog-close (click)="addUser()">{{ actionBtn }}</button>
+    </div>
+  </div>
