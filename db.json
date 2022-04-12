@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "firstName": "Test",
+      "lastName": "Testsadas",
+      "email": "test@gmail.com",
+      "password": "test123456",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "firstName": "Admin",
+      "lastName": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin123456",
+      "role": "admin",
+      "id": 4
+    },
+    {
+      "firstName": "Jovana",
+      "lastName": "Jovanovic",
+      "email": "jovana@gmail.com",
+      "password": "jovanaJ55",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "firstName": "Milan",
+      "lastName": "Milanovic",
+      "email": "milan@gmail.com",
+      "password": "milan111",
+      "role": "user",
+      "id": 8
+    },
+    {
+      "firstName": "StefanS",
+      "lastName": "Joncicsdfsdfsd",
+      "email": "stefanjoncic92@gmail.com",
+      "password": "stefan123444",
+      "role": "admin",
+      "id": 9
+    },
+    {
+      "firstName": "Mirko",
+      "lastName": "Mirkovic",
+      "email": "mirkom@gmail.com",
+      "password": "mirko111",
+      "role": "user",
+      "id": 10
+    }
+  ],
+  "role": [
+    {
+      "id": 1,
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "role": "admin"
+    }
+  ]
+}
