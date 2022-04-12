@@ -1,0 +1,18 @@
+.mat-toolbar-single-row{
+    justify-content: space-between;
+}
+
+.btn-logout{
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+    background: #444;
+    border-radius: 30px;
+    color: #fff;
+    border: 1px solid #fff;
+    &:hover{
+        background: #fff;
+        color: #444;
+        border: 1px solid #444;
+    }
+}
